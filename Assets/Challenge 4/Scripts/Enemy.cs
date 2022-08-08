@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     Vector3 whereLooks;
     float speed = 10.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         enemyRB = GetComponent<Rigidbody>();
@@ -36,6 +35,5 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             PlayerController.score--;
         }
-
     }
 }

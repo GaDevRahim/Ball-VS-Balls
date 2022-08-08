@@ -21,13 +21,11 @@ public class SpawnManager : MonoBehaviour
     float minZ = 22.0f;
     float maxZ = 28.5f;
 
-    // Start is called before the first frame update
     void Start()
     {
         posiPlayer = new Vector3(0, 0, -7);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (PlayerController.gameOver)

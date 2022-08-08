@@ -27,24 +27,16 @@ public class PlayerController : MonoBehaviour
     internal static int score = 0;
     internal static bool gameOver = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
         followPlayer = new Vector3(0, -0.65f, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void FixedUpdate()
     {
         Move();
     }
-
 
     void Move()
     {
@@ -109,7 +101,5 @@ public class PlayerController : MonoBehaviour
             else if(hasPower)
                 BounceObj.AddForce(directionBounce * strongPower, ForceMode.Impulse);
         }
-
     }
-
 }

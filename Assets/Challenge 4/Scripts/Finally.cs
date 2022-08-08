@@ -8,13 +8,11 @@ public class Finally : MonoBehaviour
     Text final;
     int highScore = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         final = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(PlayerController.score < 0)
