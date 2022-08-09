@@ -7,7 +7,7 @@ public class RotateFocalPoint : MonoBehaviour
     float horizontalInput;
     float speed = 5.0f;
 
-    private void FixedUpdate()
+    private void Update()
     {
         float horizontalInput = Input.GetAxis("Mouse X") * speed;
         transform.Rotate(0, horizontalInput, 0);
